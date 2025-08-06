@@ -173,6 +173,18 @@
             border-radius: 10px;
             max-width: 100%;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
 
@@ -249,7 +261,7 @@
         <img src="img/bt21-cooky.gif" alt="Cooky Happy" style="max-width:200px; margin-top:10px;">
         <p style="margin-top:15px; font-size:1.1em; line-height:1.5;">
             Kakak hebat banget! 🥳<br>
-            Cooky sampai loncat-loncat kesenangan lihat kakak berhasil<br>
+            Cooky sampai loncat-loncat kesenangan lihat kakak berhasil<br><br>
 
             Dari Abdi untuk kakak tersayang 💗<br>
             Semoga semua kejutan kecil ini bikin kakak tersenyum sepanjang hari 🥰<br>
@@ -258,22 +270,6 @@
             ❤️ <b>I Love You</b> ❤️
         </p>
     </div>
-
-
-    <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-    </style>
-
 
     <script>
         function createHeart() {
@@ -402,3 +398,4 @@
 </body>
 
 </html>
+
