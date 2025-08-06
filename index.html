@@ -5,24 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <title>Happy Birthday!!! :)</title>
+  <title>Happy Birthday</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
   <link href="style/style.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <!-- Emoji hiasan -->
   <div style="position: fixed; bottom: 10px; right: 10px; font-size: 24px; opacity: 0.5;">💖</div>
   <div style="position: fixed; top: 20px; left: 20px; font-size: 20px; opacity: 0.4;">🌷</div>
   <div style="position: fixed; top: 50%; left: 5%; font-size: 18px; opacity: 0.3;">💗</div>
 
   <div class="wrapper">
     <div class="image-section">
-      <img src="img/day.jpg" alt="HTS">
+      <img src="Img/day.jpg" alt="HTS">
     </div>
     <div class="pin-section">
-      <h2>Masukkan PIN 💗</h2>
+      <h2>Clue : Tanggal</h2>
       <div id="pinDisplay" class="pin-display"></div>
 
       <div class="keypad">
@@ -41,7 +40,6 @@
       </div>
 
       <div id="error" class="error"></div>
-      <h2>Clue : Tanggal</h2>
     </div>
   </div>
 
@@ -59,7 +57,6 @@
     }
   </script>
 
-  <!-- Script PIN -->
   <script>
     let pin = "";
 
@@ -86,10 +83,10 @@
 
     function checkPin() {
       if (pin === "070804") {
-        showPopup("Asik! PIN Benar ayo kita mulai 💖");
+        showPopup("Asik! PIN benar mari kita mulai 💖");
         setTimeout(() => window.location.href = "HBD.html", 1500);
       } else {
-        showPopup("Eh, kok salah PIN? 🤔 Coba ingat-ingat lagi...");
+        showPopup("Eh, kok salah PIN? Coba ingat-ingat lagi... 🤔");
         pin = "";
         updateDisplay();
       }
@@ -99,7 +96,7 @@
       const popup = document.createElement("div");
       popup.className = "popup";
       popup.textContent = message;
-      popup.style.textAlign = "center"; // ⬅ teks di dalam popup jadi tengah
+      popup.style.textAlign = "center"; 
       document.body.appendChild(popup);
 
       setTimeout(() => {
@@ -110,9 +107,4 @@
 
 </body>
 
-
 </html>
-
-
-
-
