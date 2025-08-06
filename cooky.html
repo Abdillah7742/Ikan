@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kakak Kenal Aku?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Happy Birthday!!!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
     <style>
         body {
             background: linear-gradient(135deg, #ffe6f0, #ffc1d3);
@@ -28,8 +31,15 @@
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .box {
@@ -46,8 +56,15 @@
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(25px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .btn-container {
@@ -68,9 +85,19 @@
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .btn:hover { transform: scale(1.08); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .yes-btn { background: linear-gradient(45deg, #ff85c1, #ff4d94); }
-        .no-btn { background: #999; position: relative; }
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .yes-btn {
+            background: linear-gradient(45deg, #ff85c1, #ff4d94);
+        }
+
+        .no-btn {
+            background: #999;
+            position: relative;
+        }
 
         /* Hati mengambang */
         .heart {
@@ -83,6 +110,7 @@
             opacity: 0.7;
             z-index: 0;
         }
+
         .heart::before,
         .heart::after {
             content: '';
@@ -92,11 +120,27 @@
             background: pink;
             border-radius: 50%;
         }
-        .heart::before { top: -10px; left: 0; }
-        .heart::after { left: -10px; top: 0; }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+
         @keyframes floatUp {
-            0% { transform: translateY(0) rotate(45deg); opacity: 0.8; }
-            100% { transform: translateY(-120vh) rotate(45deg); opacity: 0; }
+            0% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(-120vh) rotate(45deg);
+                opacity: 0;
+            }
         }
 
         /* Sparkle */
@@ -110,19 +154,32 @@
             opacity: 0.8;
             z-index: 0;
         }
+
         @keyframes sparkleAnim {
-            0%, 100% { transform: scale(0.5); opacity: 0.8; }
-            50% { transform: scale(1.5); opacity: 1; }
+
+            0%,
+            100% {
+                transform: scale(0.5);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
         }
 
-        img { border-radius: 10px; max-width: 100%; }
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
     </style>
 </head>
+
 <body>
 
-    <!-- Bagian Pertama -->
     <div id="section1" class="box">
-        <h1>🐰 Kakak kenal aku siapa?</h1>
+        <h1>Hi, Liyah kenal aku siapa?</h1>
         <img src="img/Cooky.webp" alt="Cooky BT21" class="cooky-img">
         <div class="btn-container">
             <button class="btn yes-btn" id="yesBtn1">Kenal 😍</button>
@@ -130,52 +187,95 @@
         </div>
     </div>
 
-    <!-- Bagian Kedua -->
     <div id="section2" class="box" style="display: none;">
-        <h1>Yeay! Kakak kenal aku 🥰</h1>
+        <h1>Hehe, Aku Cooky karakter kesukaan kakak 🥰🥰</h1>
         <img src="img/bunny-good.gif" alt="Bunny Good">
         <p>Seneng banget bisa kenal sama kakak.<br>
-        Oh iya... bunga yang tadi Andi kasih, kakak suka nggak? 🌸</p>
+            Oh iya... bunga yang tadi Abdi kasih, kakak suka nda?</p>
         <div class="btn-container">
             <button class="btn yes-btn" id="yesFlower">Suka Banget 💖</button>
             <button class="btn no-btn" id="noFlower">Hmm Biasa Aja 🤭</button>
         </div>
     </div>
 
-    <!-- Bagian Ketiga (Romantis) -->
     <div id="section3-love" class="box" style="display: none;">
         <h1>💖 Wah, makasih kak!</h1>
         <img src="img/bt21-uwu.gif" alt="BT21 Uwu">
-        <p>Kakak tau nggak…  
-        pas kakak bilang suka, hati Andi langsung melting kayak es krim di musim panas 😍🍦  
-        Semoga bunga itu jadi pengingat kecil kalau Andi tuh sayang banget sama kakak 🥰</p>
-        <button class="btn yes-btn" id="toEndFromLove" style="margin-top:10px;">Lanjut 🎁</button>
+        <p>Kakak tau nggak…
+            pas kakak bilang suka, hati Abdi langsung melting kayak es krim di musim panas 😍🍦
+            Semoga bunga itu jadi pengingat kecil kalau Abdi tuh sayang banget sama kakak 🥰</p>
+        <button class="btn yes-btn" id="toEndFromLove" style="margin-top:10px;">Main Yukk</button>
     </div>
 
-    <!-- Bagian Ketiga (Lucu + Sedih) -->
+
     <div id="section3-funny" class="box" style="display: none;">
         <h1>💔 Oh... gitu ya kak...</h1>
         <img src="img/bt21.gif" alt="BT21 Sedih">
-        <p>Kirain bunga itu bikin kakak senyum... ternyata cuma bikin Andi kayak bunga yang layu 🌸🥀  
-        Sakit sih... tapi nggak apa-apa, senyum kakak tetap jadi favorit Andi, walau bukan karena bunga ini 😢</p>
-        <button class="btn yes-btn" id="toEndFromFunny" style="margin-top:10px;">Lanjut 🎁</button>
+        <p>Kirain bunga itu bikin kakak senyum... ternyata cuma bikin Abdi kayak bunga yang layu 🥀
+            Sakit sih... tapi nggak apa-apa, senyum kakak tetap jadi favorit Abdi, walau bukan karena bunga ini 😢</p>
+        <button class="btn yes-btn" id="toEndFromFunny" style="margin-top:10px;">Main Yukk</button>
     </div>
 
-    <!-- Bagian Keempat (Penutup) -->
-    <div id="section4-end" class="box" style="display: none;">
-        <h1>🎉 Terima Kasih Kakak 💖</h1>
-        <img src="img/bt21-cooky.gif" alt="Happy Birthday">
-        <p>Semoga semua kejutan kecil ini bikin kakak tersenyum 🥰  
-        Terima kasih udah jadi orang yang istimewa buat Andi 💗  
-        <br><br>
-        🎂 <b>Happy Birthday!</b> 🎂  
-        <br>
-        ❤️ I Love You ❤️
+    <div id="section-game" class="box" style="display:none;">
+        <h1>🐰 Tangkap Cooky!</h1>
+        <p>Klik Cooky 10 kali untuk lanjut ke kejutan terakhir 💖</p>
+        <div id="game-area"
+            style="position:relative; width:100%; height:300px; background:#ffe6f0; border-radius:15px; overflow:hidden; margin-top:10px;">
+            <img id="cooky-target" src="img/Cooky.webp" alt="Cooky"
+                style="position:absolute; width:80px; cursor:pointer; display:none;">
+        </div>
+        <p id="score">Skor: 0</p>
+
+        <!-- Pesan Kemenangan -->
+        <div id="win-message" style="display:none; text-align:center; margin-top:15px;">
+            <h3>🎉 Selamat! Kamu berhasil menangkap 10 Cooky! 🎉</h3>
+            <button onclick="restartGame()"
+                style="padding:8px 16px; background:#ff69b4; color:white; border:none; border-radius:8px; cursor:pointer; margin:5px;">
+                Main Lagi
+            </button>
+            <button onclick="lanjutGame()"
+                style="padding:8px 16px; background:#ff69b4; color:white; border:none; border-radius:8px; cursor:pointer; margin:5px;">
+                Lanjut
+            </button>
+        </div>
+
+        <audio id="pop-sound" src="sound/pop.mp3" preload="auto"></audio>
+    </div>
+
+
+
+    <div id="section4-end" class="box" style="display: none; text-align:center;">
+        <h1>Yeay! Kamu berhasil</h1>
+        <img src="img/bt21-cooky.gif" alt="Cooky Happy" style="max-width:200px; margin-top:10px;">
+        <p style="margin-top:15px; font-size:1.1em; line-height:1.5;">
+            Kakak hebat banget! 🥳<br>
+            Cooky sampai loncat-loncat kesenangan lihat kakak berhasil<br>
+
+            Dari Abdi untuk kakak tersayang 💗<br>
+            Semoga semua kejutan kecil ini bikin kakak tersenyum sepanjang hari 🥰<br>
+
+            🎂 <b>Happy Birthday!</b> 🎂<br>
+            ❤️ <b>I Love You</b> ❤️
         </p>
     </div>
 
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+
+
     <script>
-        // Efek hati
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
@@ -187,7 +287,6 @@
         }
         setInterval(createHeart, 800);
 
-        // Efek sparkle
         function createSparkle() {
             const sparkle = document.createElement('div');
             sparkle.classList.add('sparkle');
@@ -199,7 +298,6 @@
         }
         setInterval(createSparkle, 300);
 
-        // Tombol "Nggak Kenal" kabur
         const noBtn1 = document.getElementById('noBtn1');
         let move1 = false;
         noBtn1.addEventListener('click', () => {
@@ -234,12 +332,73 @@
         // Ke penutup
         document.getElementById('toEndFromLove').addEventListener('click', () => {
             document.getElementById('section3-love').style.display = 'none';
-            document.getElementById('section4-end').style.display = 'inline-block';
+            document.getElementById('section-game').style.display = 'inline-block';
+            startCookyGame();
         });
         document.getElementById('toEndFromFunny').addEventListener('click', () => {
             document.getElementById('section3-funny').style.display = 'none';
-            document.getElementById('section4-end').style.display = 'inline-block';
+            document.getElementById('section-game').style.display = 'inline-block';
+            startCookyGame();
         });
+
+        let cookyScore = 0;
+        let cookyInterval;
+
+        function startCookyGame() {
+            cookyScore = 0;
+            document.getElementById('score').innerText = "Skor: 0";
+            const cooky = document.getElementById('cooky-target');
+            cooky.style.display = 'block';
+            document.getElementById('win-message').style.display = 'none';
+            moveCooky();
+
+            // Klik Cooky
+            cooky.onclick = () => {
+                document.getElementById('pop-sound').currentTime = 0;
+                document.getElementById('pop-sound').play();
+
+                cooky.style.transform = 'scale(1.2) rotate(10deg)';
+                setTimeout(() => { cooky.style.transform = 'scale(1)'; }, 200);
+
+                cookyScore++;
+                document.getElementById('score').innerText = "Skor: " + cookyScore;
+
+                if (cookyScore >= 10) {
+                    clearInterval(cookyInterval);
+                    cooky.style.display = 'none';
+                    document.getElementById('win-message').style.display = 'block';
+                }
+            };
+
+            cookyInterval = setInterval(moveCooky, 750);
+        }
+
+        function moveCooky() {
+            const gameArea = document.getElementById('game-area');
+            const cooky = document.getElementById('cooky-target');
+
+            const maxX = gameArea.offsetWidth - cooky.offsetWidth;
+            const maxY = gameArea.offsetHeight - cooky.offsetHeight;
+
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            cooky.style.left = randomX + 'px';
+            cooky.style.top = randomY + 'px';
+        }
+
+        function restartGame() {
+            startCookyGame();
+        }
+
+        function lanjutGame() {
+            document.getElementById('section-game').style.display = 'none';
+            document.getElementById('section4-end').style.display = 'inline-block';
+        }
+
+
     </script>
+
 </body>
+
 </html>
